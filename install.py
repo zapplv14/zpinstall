@@ -249,8 +249,8 @@ def install_bench(args):
 	if args.production:
 		extra_vars.update(max_worker_connections=multiprocessing.cpu_count() * 1024)
 
-	frappe_branch = 'version-12'
-	erpnext_branch = 'version-12'
+	frappe_branch = 'v14.0'
+	erpnext_branch = 'v14.0'
 
 	if args.version:
 		if args.version <= 10:
@@ -285,7 +285,7 @@ def install_bench(args):
 
 def clone_bench_repo(args):
 	'''Clones the bench repository in the user folder'''
-	branch = args.bench_branch or 'develop'
+	branch = args.bench_branch or 'v14.0'
 	repo_url = args.repo_url or 'https://github.com/zapplv14/bench'
 
 	if os.path.exists(tmp_bench_repo):

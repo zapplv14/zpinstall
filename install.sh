@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "INSTALL ZAPPLYZER PLATFORM VERSION 14"
+sudo apt install python3-minimal build-essential python3-setuptools
+sudo apt install supervisor
+sudo apt install nginx
+sudo python3 install.py --develop --user mdsbase

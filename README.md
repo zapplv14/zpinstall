@@ -1,0 +1,2 @@
+# zpinstall
+ZAPPLYZER INSTALLER
